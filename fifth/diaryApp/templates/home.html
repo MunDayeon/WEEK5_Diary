@@ -1,3 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+
 {% for diary in diarys.all %}
     <h1> &lt;제목&gt; {{diary.title}} </h1>
     <p> &lt;날짜&gt; {{diary.pub_date}} </p>
@@ -5,3 +8,5 @@
     <hr><hr>
     <br><br>
 {% endfor %}
+
+{% endblock %}

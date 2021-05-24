@@ -1,5 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
 <h1>&quot;자세한 본문 내용&quot;</h1>
 <br>
 <h1> &lt;제목&gt; {{diary.title}} </h1>
 <p> &lt;작성 날짜&gt; {{diary.pub_date}} </p>
 <p> &lt;본문 전체보기&gt; {{diary.body}} </p>
+
+{% endblock %}
